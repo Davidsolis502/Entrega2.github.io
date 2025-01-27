@@ -1,0 +1,40 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 14%;
+    height: 20%;
+    margin: 10px;
+}
+#carouselExampleDark {
+    width: 400px; /* Ancho fijo */
+    height: 390px; /* Alto fijo */
+    margin: 0 auto; /* Centra el carrusel */
+  }
+  
+  #carouselExampleDark img {
+    object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse */
+    height: 100%; 
+    width: 100%;
+  }
+body{
+    background-color: whitesmoke;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+}
+header nav ul{
+    color: whitesmoke;
+    display: flex;
+    gap: 2rem;
+}
+footer{
+    text-align: center;
+    margin-top: 5rem;
+}
