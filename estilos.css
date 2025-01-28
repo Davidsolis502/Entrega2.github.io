@@ -7,18 +7,43 @@
 .logo{
     width: 14%;
     height: 20%;
-    margin: 10px;
+    margin: 50px;
 }
-#carouselExampleDark {
-    width: 400px; /* Ancho fijo */
-    height: 390px; /* Alto fijo */
-    margin: 0 auto; /* Centra el carrusel */
-  }
-  
-  #carouselExampleDark img {
-    object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse */
-    height: 100%; 
+.imagen_sobre_nosotros{
     width: 100%;
+    height: 100%;
+}
+.texto {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+.texto2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+#carouselExampleAutoplaying {
+    width:25%; /* Ajusta el ancho*/
+    height:auto; /* Mantiene la proporción */
+    margin: 0 auto; /* Centra el carrusel en la página */
+  }
+
+  /* Ajustar las imágenes para que se adapten al nuevo tamaño */
+  #carouselExampleAutoplaying .carousel-item img {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho del carrusel */
+    height:100%; /* Mantener la proporción original */
   }
 body{
     background-color: whitesmoke;
@@ -36,5 +61,5 @@ header nav ul{
 }
 footer{
     text-align: center;
-    margin-top: 5rem;
+    margin-top:5rem;
 }
