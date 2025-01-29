@@ -61,6 +61,12 @@ header nav ul{
     display: flex;
     gap: 2rem;
 }
+/* estilos de desktop */
+@media screen and (min-width: 1024px){
+    main{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: 30% 30% 20%;
+    }
 footer{
     text-align: center;
     margin-top:5rem;
