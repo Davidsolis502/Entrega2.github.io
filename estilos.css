@@ -75,7 +75,7 @@ header nav ul{
         grid-template-rows: repeat(2, 40%);
         column-gap: 1rem;
     }
-
+/* estilos footer*/
 footer{
     text-align: center;
     margin-top:5rem;
