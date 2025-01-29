@@ -62,7 +62,7 @@ header nav ul{
     gap: 2rem;
 }
 /* estilos de desktop */
-@media screen and (min-width: 1024px){
+@media imagen_sobre_nosotros(min-width: 1024px){
     main{
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: 30% 30% 20%;
