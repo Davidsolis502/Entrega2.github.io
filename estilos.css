@@ -114,6 +114,11 @@ footer {
         width: 30%;
         margin: 20px;
     }
+/* Responsividad: Mostrar botón de hamburguesa en móviles */
+@media (max-width: 768px) {
+    #hamburguesa {
+        display: block; /* Mostrar el botón en móviles */
+    }
 
     #carouselExampleAutoplaying {
         width: 80%;
