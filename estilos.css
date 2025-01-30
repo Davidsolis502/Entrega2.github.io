@@ -1,82 +1,125 @@
-/*reset*/
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.logo{
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo */
+.logo {
     width: 14%;
-    height: 20%;
+    height: auto;
     margin: 50px;
 }
-.imagen_sobre_nosotros{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 1.5rem;
+
+/* Imagen Sobre Nosotros */
+.imagen_sobre_nosotros {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
-.texto {
+
+/* Textos */
+.texto, .texto2 {
     position: absolute;
-    top: 30px;
     left: 50%;
-    transform: translate(-50%,-50%);
-    color:black;
+    transform: translateX(-50%);
+    color: black;
     font-size: 30px;
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
-  }
-.texto2{
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color:black;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-#carouselExampleAutoplaying {
-    width:25%; /* Ajusta el ancho*/
-    height:auto; /* Mantiene la proporción */
-    margin: 0 auto; /* Centra el carrusel en la página */
-  }
+    background-color: rgba(255, 255, 255, 0.7);
+}
 
-  /* Ajustar las imágenes para que se adapten al nuevo tamaño */
-  #carouselExampleAutoplaying .carousel-item img {
-    width: 100%; /* Asegura que las imágenes ocupen el ancho del carrusel */
-    height:100%; /* Mantener la proporción original */
-  }
-body{
+.texto {
+    top: 30px;
+}
+
+.texto2 {
+    top: 100px;
+    font-size: 20px;
+}
+
+/* Carrusel */
+#carouselExampleAutoplaying {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Body */
+body {
     background-color: whitesmoke;
 }
-header{
+
+/* Header */
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 1.5rem;
 }
-header nav ul{
-    color: whitesmoke;
+
+header nav ul {
+    list-style: none;
     display: flex;
     gap: 2rem;
+    padding: 0;
 }
-/* estilos de desktop */
-@imagen_sobre_nosotros and(min-width: 1024px){
-    main{
-        grid-template-columns: repeat(3, 1fr) ;
-        grid-template-rows: 30% 30% 20%;
-    }
-    
-    /* estilos de tablet */
-    @imagen_sobre_nosotros and (min-width: 600px){
-    main{
-        grid-template-columns: repeat(2, 1fr) ;
-        grid-template-rows: repeat(2, 40%);
-        column-gap: 1rem;
-    }
-/* estilos footer*/
-footer{
+
+header nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+/* Botón de hamburguesa */
+.boton_hamburguesa{
+    display: none; /* Ocultar por defecto en pantallas grandes */
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
     text-align: center;
-    margin-top:5rem;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .logo {
+        width: 30%;
+        margin: 20px;
+    }
+
+    #carouselExampleAutoplaying {
+        width: 80%;
+    }
+
+    .texto, .texto2 {
+        font-size: 20px;
+    }
 }
