@@ -23,6 +23,9 @@ html, body {
     height: auto;
     max-width: 100%;
 }
+.qr_whatsapp{
+    image-orientation:from-image;
+}
 
 /* Textos */
 .texto, .texto2 {
@@ -128,6 +131,36 @@ footer {
     background-color: #333;
     color: whitesmoke;
 }
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en móviles */
+}
+
+.contacto img {
+    width: 250px; /* Tamaño estándar */
+    height: auto;
+}
+
+.contacto h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #333;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
 
 /* Responsividad */
 /* Ajustes generales para móviles */
@@ -162,16 +195,17 @@ footer {
     article {
         width: 100%; /* Para que ocupen toda la columna */
     }
-}
- .contacto {
+    .contacto {
         flex-direction: column;
         gap: 10px;
         padding: 15px;
     }
- .contacto img {
+
+    .contacto img {
         width: 60px; /* Reduce el tamaño de los íconos */
     }
-.contacto h3 {
+
+    .contacto h3 {
         font-size: 16px; /* Reduce el tamaño del texto */
         text-align: center;
     }
@@ -179,6 +213,7 @@ footer {
     footer {
         font-size: 12px;
     }
+}
 
 /* Ajustes para pantallas aún más pequeñas */
 @media (max-width: 480px) {
