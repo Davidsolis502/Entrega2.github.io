@@ -163,6 +163,22 @@ footer {
         width: 100%; /* Para que ocupen toda la columna */
     }
 }
+ .contacto {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+ .contacto img {
+        width: 60px; /* Reduce el tamaño de los íconos */
+    }
+.contacto h3 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+        text-align: center;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 
 /* Ajustes para pantallas aún más pequeñas */
 @media (max-width: 480px) {
