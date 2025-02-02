@@ -59,8 +59,13 @@ article img {
     color:white;
     background-color:yellowgreen;
 }
-
-
+.botonComprar:hover {
+    background-color:red;
+}
+/*cambia a color rojo al tocarlo con el mouse*/
+.botonComprar:hover {
+     background-color:red;
+}
 
 /* Carrusel */
 #carouselExampleAutoplaying {
