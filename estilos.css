@@ -83,7 +83,10 @@ article img {
 .navbar {
     background-color: rgb(196, 196, 196) !important;
   }
-
+/* cambia de color al pasar el mouse*/
+.navbar-nav .nav-link:hover {
+  color:rgb(13, 202, 13)!important; /* Cambia el color al pasar el cursor */
+}
 /* Body */
 body {
     background-color: whitesmoke;
