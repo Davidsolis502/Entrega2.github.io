@@ -79,6 +79,10 @@ article img {
     height: 100%;
     object-fit: cover;
 }
+/*cambia de color la barra de navegación*/
+.navbar {
+    background-color: rgb(196, 196, 196) !important;
+  }
 
 /* Body */
 body {
