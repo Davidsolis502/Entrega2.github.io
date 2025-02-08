@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo */
+.logo {
+    width: 14%;
+    height: auto;
+    margin: 50px;
+}
+
+/* Imagen Sobre Nosotros */
+.imagen_sobre_nosotros {
+    display: block; 
+    margin: 0 auto; /* Centra la imagen */
+    width: 600px;
+    height: auto;
+    max-width: 100%;
+}
+.texto,.texto2{
+    text-align: center;
+}
+
+.qr_whatsapp{
+    image-orientation:from-image;
+}
+
+.productos{
+    text-align: center;
+    padding: 20px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre productos */
+    justify-items: center;
+}
+
+article {
+    text-align: center;
+    padding: 10px;
+    width: 170px; /* Tamaño fijo para cada producto */
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+/*tamaño de iconos de medios de pago*/
+.mercadopago,.visa,.mastercard{
+    width: 40px;
+    height: 15px;
+}
+.botonComprar{
+    color:white;
+    background-color:yellowgreen;
+}
+.botonComprar:hover {
+    background-color:red;
+}
+/*cambia a color rojo al tocarlo con el mouse*/
+.botonComprar:hover {
+     background-color:red;
+}
+
+/* Carrusel */
+#carouselExampleAutoplaying {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*cambia de color la barra de navegación*/
+.navbar {
+    background-color: rgb(196, 196, 196) !important;
+  }
+/* cambia de color al pasar el mouse*/
+.navbar-nav .nav-link:hover {
+  color:rgb(13, 202, 13)!important; /* Cambia el color al pasar el cursor */
+}
+/* Body */
+body {
+    background-color: whitesmoke;
+}
+.SobreNosotros{
+    background-color: black;
+}
+.texto,.texto2{
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    background-color: #333;
+    color: whitesmoke;
+}
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en móviles */
+}
+
+.contacto img {
+    width: 260px; /* Tamaño estándar */
+    height: auto;
+}
+
+.contacto h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #333;
+    color: whitesmoke;
+    font-size: 14px;
+}
+/*estilo boton volver a home*/
+.volver_a_home{
+    display: block;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+/* Responsividad */
+/* Ajustes generales para móviles */
+@media (max-width: 768px) {
+    .logo {
+        width: 30%;
+        margin: 20px;
+    }
+
+    /* Ajuste del carrusel */
+    #carouselExampleAutoplaying {
+        width: 100%;
+    }
+
+    /* Ajuste de textos */
+    .texto, .texto2 {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .texto2 {
+        top: 80px;
+        font-size: 16px;
+    }
+
+    /* Ajuste del grid de productos */
+    .fila {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 4 */
+    }
+
+    /* Ajuste de tamaño de artículos */
+    article {
+        width: 100%; /* Para que ocupen toda la columna */
+    }
+    .contacto {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .contacto img {
+        width: 60px; /* Reduce el tamaño de los íconos */
+    }
+
+    .contacto h3 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+        text-align: center;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    /* Un solo producto por fila */
+    .fila {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajuste del menú */
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
