@@ -231,7 +231,7 @@ footer {
     .fila {
         grid-template-columns: 1fr;
     }
-    /*saca de pantalla el qr en pantallas chicas
+    /*saca de pantalla el qr en pantallas chicas */
     .qr_whatsapp{
         display: none;
     }
