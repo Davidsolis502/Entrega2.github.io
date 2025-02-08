@@ -231,6 +231,10 @@ footer {
     .fila {
         grid-template-columns: 1fr;
     }
+    .qr_whatsapp{
+        display: none;
+    }
+
 
     /* Ajuste del menú */
     header nav ul {
